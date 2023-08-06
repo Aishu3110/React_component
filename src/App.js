@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Usecallback from './Hooks/Usecallback';
+import Usecontext1 from './Hooks/Usecontext1';
+import Useeffect1 from './Hooks/Useeffect1';
+import Usememo1 from './Hooks/Usememo1';
+import Usereducer1 from './Hooks/Usereducer1';
+import Useref1 from './Hooks/Useref1';
+import Usestate1 from './Hooks/Usestate1';
+import Customhook1 from './Hooks/Customhook1';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Customhook1/>
+    <Usecallback/>
+    <Usecontext1/>
+    <Useeffect1/>
+    <Usememo1/>
+    <Usereducer1/>
+    <Useref1/>
+    <Usestate1/>
+    </>
   );
 }
 

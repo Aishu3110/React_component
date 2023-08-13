@@ -1,25 +1,25 @@
 import React from "react";
-import {useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 
-const Customhook1 = ()=>{
-    const [counter , setCounter] = useState();
-     
+const Customhook1 = () => {
+    const [counter, setCounter] = useState();
+
     // Increases the value of counter by 1
-       function resetCounter(){
+    function resetCounter() {
         setCounter(counter + 1);
     }
-     
+
     useEffect(() => {
         // Some logic
         console.log(counter);
-    } , [counter]);
-     
+    }, [counter]);
+
     const clickedButton = resetCounter;
-    return(
+    return (
         <>
-        <h1> custom hook</h1>
+            <h1> custom hook</h1>
             <button onClick={clickedButton}>
-               Click here!
+                Click here!
             </button></>
     )
 }

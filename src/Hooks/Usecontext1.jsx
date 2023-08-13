@@ -20,7 +20,7 @@ function Component2({ user }) {
     );
   }
 
-  function Component3({ user }) {
+  function Component3() {
     return (
       <>
         <p>new born baby</p>
